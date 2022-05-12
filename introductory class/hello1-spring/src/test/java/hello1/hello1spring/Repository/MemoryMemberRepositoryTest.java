@@ -1,19 +1,16 @@
 package Repository;
 
 import hello1.hello1spring.domain.Member;
-import hello1.hello1spring.repository.MemberRerpository;
-import hello1.hello1spring.repository.MemoryMemberRerpository;
-import org.assertj.core.api.Assertions;
+import hello1.hello1spring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
 
 public class MemoryMemberRepositoryTest {
-    MemoryMemberRerpository repository = new MemoryMemberRerpository();
+    MemoryMemberRepository repository = new MemoryMemberRepository();
 
     @AfterEach
     public void afterEach(){
